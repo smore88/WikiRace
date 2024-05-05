@@ -2,7 +2,7 @@
 
 ## Brief Overview
 
-This project is inspired by the famous game called WikiRace, where we’re given a selected starting Wikipedia page and a destination Wikipedia page. The goal is to navigate from the starting page to the destination page solely by clicking the links embedded within each page using the fewest clicks. Utilizing some common graph algorithms like Djikstras, DFS, BFS, Kosaraju's, and variations of strongly connected components, this project was built.
+This project is inspired by the famous game called WikiRace, where we’re given a selected starting Wikipedia page and a destination Wikipedia page. The goal is to navigate from the starting page to the destination page solely by clicking the links embedded within each page using the fewest clicks. Utilizing some common graph algorithms like Djikstras, DFS, BFS, Kosaraju's, and variations of strongly connected components, this project was built. In order to test if the code actually worked I was able to contruct small dataset, medium dataset, and the whole datasets consisting of little over 800,000 edges.
 
 ## Data
 
@@ -32,7 +32,7 @@ In order to complete this project I needed a dataset that contained a vast amoun
 1. Open up your Terminal
 2. `cd` into the folder containing cs225 Dockerfile
 3. `git clone https://github.com/smore88/WikiRace.git`
-4. `cd WikiRace-225FinalProject/wikirace`
+4. `cd WikiRace`
 5. `mkdir data`
 6. Download the two .txt files [here](https://drive.google.com/drive/folders/1n6MIdoUR8Jymwy0taQ4BBBIdNCVNGVSm?usp=share_link) to use our data set
 7. Drag them into the `data` folder you just created in step 5
@@ -60,7 +60,4 @@ In order to complete this project I needed a dataset that contained a vast amoun
         <img src="./Documents/Images/sixth.png" width="560"/>
       </p>
 
-We constructed the small and medium sized datasets in the [`/test_data`](https://github.com/DylanDunham03/WikiRace-225FinalProject/tree/main/wikirace/test_data) directory, which is used to evaluate our algorithms' correctness. We made those datasets include both the cycles and disconnected components, so that we can test our algorithms on these edge cases as well. 
-
-Our tests cover running the constructor, BFS algorithm, Dijkstra's algorithm, and Kosaraju's algorithm on our small dataset, medium dataset, and the whole dataset. One exception is that, for the Kosaraju's algorithm running on the whole dataset, we tested it only on cutted dataset which contains 800,000 edges (due to the limitations of stack overflow from recursive calls), yet, it still shows that our algorithm works for general datasets with smaller sizes.
-
+I was able to construct small and medium sized datasets in the [`/test_data`](https://github.com/smore88/WikiRace/tree/main/wikirace/test_data) directory so that we can test the code on edge cases as well like cycles. 
