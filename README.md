@@ -1,12 +1,5 @@
 # The Wikipedia Race Game - WikiRace
 
-<p align="center">
-  <a href="#data">Data</a> •
-  <a href="#repo-structure">Repo Structure</a> •
-  <a href="#running-instructions">Running Instructions</a> •
-  <a href="#team">Team</a>
-</p>
-
 ## Brief Overview
 
 This project is inspired by the famous game called WikiRace, where we’re given a selected starting Wikipedia page and a destination Wikipedia page. The goal is to navigate from the starting page to the destination page solely by clicking the links embedded within each page using the fewest clicks. Utilizing some common graph algorithms like Djikstras, DFS, BFS, Kosaraju's, and variations of strongly connected components, this project was built.
@@ -26,7 +19,7 @@ In order to complete this project I needed a dataset that contained a vast amoun
 - All major files that contain the functions and classes are in the [`/src`](https://github.com/smore88/WikiRace/tree/main/wikirace/src), except for the command-line input handler which is stored in `main.cpp` in [`/entry`](https://github.com/smore88/WikiRace/tree/main/wikirace/entry). The structure of how those files/classes interact with our project is outlined in the [Project Structure](#project-structure) below.
 - The “wiki-topcat” dataset pulled from Stanford SNAP is stored in [`/data`](https://github.com/smore88/WikiRace/tree/main/wikirace)  once you make the folder and import the .txt files as in the [Running Instructions](#running-instructions). The “small” and “medium” datasets used in testing are stored in [`/test_data`](https://github.com/smore88/WikiRace/tree/main/wikirace/test_data). All data is stored in .txt files
 - Test cases are in the [`/tests`](https://github.com/smore88/WikiRace/tree/main/wikirace/tests)
-- The written project report, development log, contract, and project proposal are in the [`/Documents`](https://github.com/smore88/WikiRace/tree/main/Documents)
+- I sorted all the ideas out into the Project Proposal, Written Report, and Structure Image as well here [`/Documents`](https://github.com/smore88/WikiRace/tree/main/Documents)
 
 ### Project Structure
 <p align="center">
@@ -48,7 +41,6 @@ In order to complete this project I needed a dataset that contained a vast amoun
 9. `cd build`
 10. `cmake ..`
 11. If you want to run the algorithms, skip to the [Executable](#executable) part. If you want to run the test suites, skip to the [Tests](#tests) part.
-    - Feel free to watch our [Demo video](https://youtu.be/Bxm03RmKXgg) on how to run the Executable and Test suites
 
 ### Executable
 1. From the build directory, run `make main`
