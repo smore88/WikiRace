@@ -1,4 +1,4 @@
-# Project: WikiRace
+# The Wikipedia Race Game - WikiRace
 
 <p align="center">
   <a href="#data">Data</a> •
